@@ -76,8 +76,8 @@ function ContactPage() {
   return (
     <main>
       <section className="blueprint">
-        <div className="mx-auto grid max-w-[1440px] grid-cols-12 gap-8 px-5 py-12 sm:gap-10 sm:px-8 sm:py-20 lg:py-28">
-          <div className="col-span-12 lg:col-span-5">
+        <div className="mx-auto grid max-w-[1440px] grid-cols-1 lg:grid-cols-12 gap-8 px-5 py-12 sm:gap-10 sm:px-8 sm:py-20 lg:py-28">
+          <div className="lg:col-span-5">
             <p className="text-[11px] uppercase tracking-[0.3em] text-brand-orange">
               Contact — Project brief
             </p>
@@ -87,7 +87,7 @@ function ContactPage() {
             </p>
           </div>
           <form
-            className="col-span-12 grid gap-4 border border-brand-line/50 bg-brand-ink-2/50 p-5 sm:gap-5 sm:p-6 lg:col-span-7"
+            className="grid gap-4 border border-brand-line/50 bg-brand-ink-2/50 p-5 sm:gap-5 sm:p-6 lg:col-span-7"
             onSubmit={handleSubmit}
           >
             <label className="text-sm text-brand-paper/65">
