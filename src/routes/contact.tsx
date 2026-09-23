@@ -76,18 +76,18 @@ function ContactPage() {
   return (
     <main>
       <section className="blueprint">
-        <div className="mx-auto grid max-w-[1440px] grid-cols-12 gap-10 px-5 py-20 sm:px-8 lg:py-28">
+        <div className="mx-auto grid max-w-[1440px] grid-cols-12 gap-8 px-5 py-12 sm:gap-10 sm:px-8 sm:py-20 lg:py-28">
           <div className="col-span-12 lg:col-span-5">
             <p className="text-[11px] uppercase tracking-[0.3em] text-brand-orange">
               Contact — Project brief
             </p>
-            <h1 className="mt-7 text-5xl leading-[1.05]">Tell us what needs to move.</h1>
-            <p className="mt-6 max-w-[42ch] text-lg leading-relaxed text-brand-paper/65">
+            <h1 className="mt-5 text-4xl leading-[1.1] sm:mt-7 sm:text-5xl sm:leading-[1.05]">Tell us what needs to move.</h1>
+            <p className="mt-4 max-w-[42ch] text-base leading-relaxed text-brand-paper/65 sm:mt-6 sm:text-lg">
               Share your business goal, the current challenge and the outcome you want.
             </p>
           </div>
           <form
-            className="col-span-12 grid gap-5 border border-brand-line/50 bg-brand-ink-2/50 p-6 lg:col-span-7"
+            className="col-span-12 grid gap-4 border border-brand-line/50 bg-brand-ink-2/50 p-5 sm:gap-5 sm:p-6 lg:col-span-7"
             onSubmit={handleSubmit}
           >
             <label className="text-sm text-brand-paper/65">
