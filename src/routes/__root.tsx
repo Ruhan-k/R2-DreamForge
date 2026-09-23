@@ -154,11 +154,11 @@ function SiteHeader() {
           <Link to="/contact" className="transition-colors hover:text-brand-paper">Contact Us</Link>
         </nav>
         <Link to="/contact" className="hidden border border-brand-orange/70 px-4 py-2 text-sm font-medium text-brand-orange transition-colors hover:bg-brand-orange hover:text-brand-ink sm:inline-flex">Start a project →</Link>
-        <details className="relative lg:hidden">
+        <details className="relative lg:hidden group">
           <summary className="cursor-pointer list-none border border-brand-line/60 px-3 py-2 text-xs uppercase tracking-[0.15em]">Menu</summary>
-          <nav className="absolute right-0 top-12 w-52 border border-brand-line/60 bg-brand-ink p-3 shadow-xl" aria-label="Mobile navigation">
-            {navLinks.map((item) => <Link key={item.to} to={item.to} className="block border-b border-brand-line/30 px-2 py-3 text-sm">{item.label}</Link>)}
-            <Link to="/contact" className="mt-3 block bg-brand-orange px-3 py-3 text-sm font-semibold text-brand-ink">Contact Us</Link>
+          <nav className="absolute right-0 top-12 w-[calc(100vw-40px)] max-w-sm border border-brand-line/60 bg-brand-ink p-3 shadow-xl" aria-label="Mobile navigation">
+            {navLinks.map((item) => <Link key={item.to} to={item.to} className="block border-b border-brand-line/30 px-2 py-4 text-sm">{item.label}</Link>)}
+            <Link to="/contact" className="mt-3 block bg-brand-orange px-3 py-4 text-center text-sm font-semibold text-brand-ink">Contact Us</Link>
           </nav>
         </details>
       </div>
